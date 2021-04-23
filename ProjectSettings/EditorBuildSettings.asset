@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Supercyan Free Forest Sample/Scenes/MoodyNight.unity
+    guid: 6c5afed758d9dde4d96232ce7a139e63
   m_configObjects: {}
