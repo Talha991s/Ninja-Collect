@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DeadZone
   - Enemies
+  - PickUp
   layers:
   - Default
   - TransparentFX
