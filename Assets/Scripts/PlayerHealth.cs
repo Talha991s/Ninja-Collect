@@ -18,11 +18,11 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-       if(currentHealth <= 0)
-        {
+       if(currentHealth <= 0f)
+       {
             gameOver.SetActive(true);
             Time.timeScale = 0;
-        }
+       }
     }
     public void TakeDamage(float damage)
     {

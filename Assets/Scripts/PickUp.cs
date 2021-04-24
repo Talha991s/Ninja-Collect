@@ -12,15 +12,17 @@ public class PickUp : MonoBehaviour
     [SerializeField] private TMP_Text totalFtext;
     [SerializeField] private TMP_Text collect_text;
 
+    public AudioSource collect;
+
     private PlayerHealth playerHealth;
-    public Timer timer;
+    //public Timer timer;
     [SerializeField] private GameObject Winscene;
     //[SerializeField] private GameObject collect;
     // Start is called before the first frame update
     private void Start()
     {
         playerHealth = GetComponent<PlayerHealth>();
-        timer = GetComponent<Timer>();
+        //timer = GetComponent<Timer>();
     }
     private void Update()
     {
@@ -41,6 +43,7 @@ public class PickUp : MonoBehaviour
             Destroy(other.gameObject);
             CollectedF += 1;
             playerHealth.currentHealth += 3;
+            collect.Play();
         }
    
     }
