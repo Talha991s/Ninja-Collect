@@ -7,9 +7,10 @@ public class Timer : MonoBehaviour
 {
     Image timerBar;
     public float maxTime = 5f;
-    float timerLeft;
+    public float timerLeft;
 
-    //public GameObject GameOver;
+    public GameObject GameOver;
+    public GameObject player;
     //public GameObject pipes;
 
     // Start is called before the first frame update
@@ -31,7 +32,7 @@ public class Timer : MonoBehaviour
         else
         {
             Debug.Log("Game Over");
-            //GameOver.SetActive(true);
+            GameOver.SetActive(true);
             //Destroy(pipes);
             Time.timeScale = 0;
         }
